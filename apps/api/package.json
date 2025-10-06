@@ -1,11 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "build": "nitro build",
-    "dev": "nitro dev",
+    "build": "node init && nitro build",
+    "dev": "node init && nitro dev",
     "prepare": "nitro prepare",
     "preview": "node .output/server/index.mjs",
-    "start": "node .output/server/index.mjs",
+    "start": "node init && node .output/server/index.mjs",
     "db:generate": "npx prisma generate",
     "db:seed": "npx prisma db seed"
   },
